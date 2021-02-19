@@ -85,6 +85,9 @@ a {
     color: #fff;
     background-color: #33323d; }
 
+.footer__social-link:hover > svg path {
+  fill: #5FB4A2; }
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,5 +199,43 @@ a {
   .contact__btn {
     margin-left: 3rem;
     white-space: nowrap; }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.3rem 16.5rem;
+  background-color: #33323d; }
+  .footer__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30.9rem;
+    margin-left: 4.8rem; }
+    .footer__navigation-link {
+      color: #fff; }
+    .footer__navigation-link:hover {
+      color: #5FB4A2; }
+  .footer__social-link {
+    margin-left: 2rem; }
 
 /*# sourceMappingURL=main.css.map */
