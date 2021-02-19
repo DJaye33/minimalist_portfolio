@@ -75,3 +75,4 @@ There are multiple places you can share your solution:
 Feedback is always welcome, so if you have any to give on this challenge please email hi[at]frontendmentor[dot]io.
 
 **Have fun building!** 🚀
+# minimalist_portfolio
