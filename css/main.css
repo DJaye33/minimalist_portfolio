@@ -101,6 +101,9 @@ a {
   width: 80%;
   max-width: 111rem;
   margin: 6.4rem auto 5.4rem; }
+  @media screen and (max-width: 1080px) {
+    .navigation {
+      width: 90%; } }
   .navigation__logo {
     -webkit-box-flex: 1;
         -ms-flex: 1 1;
@@ -115,6 +118,11 @@ a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%; }
+    @media screen and (max-width: 1080px) {
+      .navigation__links {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 40%;
+                flex: 0 0 40%; } }
     .navigation__links-link:hover {
       color: #5FB4A2; }
 
@@ -128,15 +136,30 @@ a {
   width: 80%;
   max-width: 111rem;
   margin: 0 auto 15rem; }
+  @media screen and (max-width: 1080px) {
+    .hero {
+      width: 90%; } }
+  @media screen and (max-width: 768px) {
+    .hero {
+      background-image: url("../images/homepage/tablet/image-homepage-hero@2x.jpg"); } }
   .hero__intro {
     position: absolute;
     left: 0;
     bottom: 0;
     background-color: #fff;
     width: 44.5rem; }
+    @media screen and (max-width: 768px) {
+      .hero__intro {
+        width: 51.4rem;
+        padding-top: 5.6rem;
+        padding-right: 5.6rem; } }
     .hero__intro-header {
       font-size: 5rem;
       margin-bottom: 5.3rem; }
+      @media screen and (max-width: 768px) {
+        .hero__intro-header {
+          font-size: 4rem;
+          margin-bottom: 4.8rem; } }
 
 .about {
   display: -webkit-box;
@@ -150,9 +173,21 @@ a {
           align-items: center;
   width: 80%;
   max-width: 111rem;
+  max-height: 100%;
   margin: 0 auto 15rem; }
+  @media screen and (max-width: 1080px) {
+    .about {
+      width: 90%; } }
   .about__profile {
-    width: 50%; }
+    background-image: url("../images/homepage/desktop/image-homepage-profile@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 65%;
+    height: 64rem; }
+    @media screen and (max-width: 1080px) {
+      .about__profile {
+        background-image: url("../images/homepage/tablet/image-homepage-profile@2x.jpg"); } }
   .about__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -164,15 +199,23 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: 4rem;
-    width: 40rem;
+    height: 64rem;
+    width: 45rem;
     padding-top: 4rem;
     padding-bottom: 4.6rem;
     border-top: 1px solid rgba(51, 50, 61, 0.2);
-    border-bottom: 1px solid rgba(51, 50, 61, 0.2); }
+    border-bottom: 1px solid rgba(51, 50, 61, 0.2);
+    margin-left: 12rem; }
+    @media screen and (max-width: 1080px) {
+      .about__info {
+        margin-left: 8rem; } }
+    .about__info-heading {
+      font-size: 4rem; }
+    .about__info-paragraph {
+      line-height: 2.75rem; }
   .about__btn {
     width: 21.5rem;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
     text-align: center; }
 
 .contact {
@@ -188,15 +231,22 @@ a {
   width: 80%;
   max-width: 111rem;
   margin: 0 auto 9.6rem; }
+  @media screen and (max-width: 1068px) {
+    .contact {
+      width: 90%; } }
   .contact__heading {
     font-size: 4rem;
-    width: 35rem; }
+    min-width: 35rem; }
   .contact__divider {
     height: 0.1rem;
     background-color: #33323d;
     opacity: 0.3;
     width: 45%; }
+    @media screen and (max-width: 768px) {
+      .contact__divider {
+        width: 20%; } }
   .contact__btn {
+    width: 16.2rem;
     margin-left: 3rem;
     white-space: nowrap; }
 
@@ -212,6 +262,9 @@ a {
           align-items: center;
   padding: 3.3rem 16.5rem;
   background-color: #33323d; }
+  @media screen and (max-width: 1080px) {
+    .footer {
+      padding: 3.3rem 8rem; } }
   .footer__logo {
     display: -webkit-box;
     display: -ms-flexbox;

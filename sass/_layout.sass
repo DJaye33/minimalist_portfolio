@@ -8,6 +8,9 @@
     max-width: 111rem
     margin: 6.4rem auto 5.4rem
 
+    @media screen and (max-width: 1080px)
+        width: 90%
+
     &__logo
         flex: 1 1
 
@@ -15,6 +18,9 @@
         display: flex
         justify-content: space-between
         flex: 0 0 30%
+
+        @media screen and (max-width: 1080px)
+            flex: 0 0 40%
 
         &-link:hover
             color: $primary-desaturated-cyan
@@ -32,6 +38,13 @@
     max-width: 111rem
     margin: 0 auto 15rem
 
+    @media screen and (max-width: 1080px)
+        width: 90%
+
+    @media screen and (max-width: 768px)
+        background-image: url("../images/homepage/tablet/image-homepage-hero@2x.jpg")
+        
+
     &__intro
         position: absolute
         left: 0
@@ -39,9 +52,18 @@
         background-color: #fff
         width: 44.5rem
 
+        @media screen and (max-width: 768px)
+            width: 51.4rem
+            padding-top: 5.6rem
+            padding-right: 5.6rem
+
         &-header
             font-size: 5rem
             margin-bottom: 5.3rem
+
+            @media screen and (max-width: 768px)
+                font-size: 4rem
+                margin-bottom: 4.8rem
 // End Header
 ///////////////////////////////////////
 // Section: About
@@ -51,25 +73,49 @@
     align-items: center
     width: 80%
     max-width: 111rem
+    max-height: 100%
     margin: 0 auto 15rem
 
+    @media screen and (max-width: 1080px)
+        width: 90%
+
     &__profile
-        width: 50%
+        background-image: url("../images/homepage/desktop/image-homepage-profile@2x.jpg")
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        width: 65%
+        height: 64rem
+
+        @media screen and (max-width: 1080px)
+            background-image: url("../images/homepage/tablet/image-homepage-profile@2x.jpg")
 
     &__info
         display: flex
         justify-content: space-evenly
         flex-direction: column
-        font-size: 4rem
-        width: 40rem
+        height: 64rem
+        width: 45rem
         padding-top: 4rem
         padding-bottom: 4.6rem
         border-top: 1px solid rgba($primary-grayish-dark-blue, .2)
         border-bottom: 1px solid rgba($primary-grayish-dark-blue, .2)
+        margin-left: 12rem
+
+        @media screen and (max-width: 1080px)
+            margin-left: 8rem
+
+        &-heading
+            font-size: 4rem
+
+        &-paragraph
+
+            @media screen and (max-width: 768px)
+            line-height: 2.75rem
 
     &__btn
         width: 21.5rem
-        margin-top: 2rem
+        margin-top: 2.5rem
         text-align: center
 // End Section: About
 ///////////////////////////////////////
@@ -82,9 +128,12 @@
     max-width: 111rem
     margin: 0 auto 9.6rem
 
+    @media screen and (max-width: 1068px)
+        width: 90%
+
     &__heading
         font-size: 4rem
-        width: 35rem
+        min-width: 35rem
 
     &__divider
         height: .1rem
@@ -92,7 +141,11 @@
         opacity: .3
         width: 45%
 
+        @media screen and (max-width: 768px)
+            width: 20%
+
     &__btn
+        width: 16.2rem
         margin-left: 3rem
         white-space: nowrap
 // End Contact
@@ -104,6 +157,9 @@
     align-items: center
     padding: 3.3rem 16.5rem
     background-color: $primary-grayish-dark-blue
+
+    @media screen and (max-width: 1080px)
+        padding: 3.3rem 8rem
 
     &__logo
         display: flex
